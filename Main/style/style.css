@@ -110,7 +110,6 @@ body {
 .hero .content {
     padding: 1.4rem 7%;
     max-width: 60rem;
-    position: relative;
 }
 
 .hero .content h1 {
@@ -143,6 +142,13 @@ body {
     border-radius: 0.5rem;
     box-shadow: 1px 1px 3px rgba(1,1,1,0.5);
 }
+
+/* About Section */
+.about {
+    padding: 1.4rem, 7%;
+    
+}
+
 /* Media queries */
 
 /* Laptop */
