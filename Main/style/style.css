@@ -20,6 +20,7 @@ body {
     
     background-color: var(--bg);
     color: var(--white);
+    min-height: 2000px;
 }
 
 /* Navbar */
@@ -84,6 +85,64 @@ body {
     display: none;
 }
 
+/* Hero Section */
+
+.hero {
+    content: '';
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../../Resources/dark-light2021-GfPlLAsAGnA-unsplash.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(1 ,1 , 3, 1) 8%, rgba(255, 255, 252, 0) 50%)
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    position: relative;
+}
+
+.hero .content h1 {
+    font-size: 5em;
+    color: var(--white);
+    text-shadow: 1px 1px 3px rgba(1,1,1,0.5);
+    line-height: 1.2;
+}
+
+.hero .content h1 span {
+    color: var(--primary);
+
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+    font-weight: 100;
+}
+
+.hero .content .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1,1,1,0.5);
+}
 /* Media queries */
 
 /* Laptop */
