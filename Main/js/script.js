@@ -13,3 +13,7 @@ document.addEventListener('click', function(e) {
         navbarNav.classList.remove('active');
     }
 })
+
+// Ketika nav #Home diklik
+
+// Ketika nav #About diklik
