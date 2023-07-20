@@ -17,10 +17,9 @@
 }
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    
     background-color: var(--bg);
     color: var(--white);
-    min-height: 2000px;
+    min-height: 5000px;
 }
 
 /* Navbar */
@@ -144,23 +143,25 @@ body {
 }
 
 /* About Section */
-.about {
+.about,
+.menu, .contact{
     padding: 8rem 7% 1.4rem;
 }
 
-.about h2{
+.about h2,
+.menu h2, .contact h2{
     text-align: center;
     font-size: 2.6rem;
     margin-bottom: 3rem;
 }
 
-.about h2 span {
+.about h2 span,
+.menu h2 span, .contact h2 span {
     color: var(--primary);
 }
 
 .about .row {
     display: flex;
-
 }
 .about .row .about-img {
     flex: 1 1 40rem;
@@ -186,14 +187,92 @@ body {
     font-weight: 100;
     line-height: 1.6;
 }
-/* Media queries */
 
+/* Menu Section */
+.menu h2 {
+    margin-bottom: 1rem ;
+}
+
+.menu p, .contact p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.menu-card {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.menu .row .menu-card-img {
+    border: solid none;
+    border-radius: 10px;
+    height: 20rem;
+    margin: 2.5rem 3rem 0 ;
+} 
+
+.menu .menu-card .menu-card-title {
+    margin: 1rem auto 0.5rem;
+}
+
+/* Contact Section */
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: var(--secondary);
+    flex-wrap: wrap;
+}
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #F2EDDC;
+    padding-left: 2rem;
+}
+
+.contact .row form .input-group input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+}
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+/* Media queries */
 /* Laptop */
 @media (max-width: 1366px) {
     html {
         font-size: 80%;
     }
-    
 }
 
 /* Tablet */
@@ -256,6 +335,22 @@ body {
     
     .about .row .content p {
         font-size: 1.6rem;
+    }
+
+    .menu p {
+        font-size: 1.2rem;
+    }
+
+    .contact .row {
+        flex-wrap: wrap;
+    }
+
+    .contact .row .map {
+        height: 35rem;
+    }
+
+    .contact .row form {
+        padding-top: 0
     }
 }
 
